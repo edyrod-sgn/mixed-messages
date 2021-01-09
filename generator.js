@@ -1,3 +1,4 @@
+// Array of the words for the 
 const characteristics = {
     strengths: [
         'creative', 'passionate', 'Generous', 'Warm-hearted', 'Cheerful', 'Humorous', 'Progressive', 'Original', 'Independent', 'Humanitarian', 'Gentle', 'affectionate', 'curious, adaptable', 'ability to learn quickly and exchange ideas', 'Tenacious', 'highly imaginative', 'loyal', 'emotional, sympathetic, persuasive', 'analytical', 'kind', 'hardworking', 'practical', 'Resourceful', 'brave', 'Responsible', 'disciplined'
@@ -22,7 +23,7 @@ const randomNums = (lim) => {
         second: second
     }
 }
-
+// Select random words for the message
 const messageBody = (obj) => {
     const messageObj = {};
     for(let key in obj){
@@ -31,6 +32,7 @@ const messageBody = (obj) => {
     }
     return messageObj;
 }
+// Display the Message for the user
 const printMessage = (messObj) => { 
     return `Your best qualities are ${messObj.strengths[0]} and ${messObj.strengths[1]} but you need to stop being ${messObj.weaknesses[0]} and ${messObj.weaknesses[1]}. Remember people dislikes ${messObj.dislikes[0]} and ${messObj.dislikes[1]}, don\'t do it`
 }
